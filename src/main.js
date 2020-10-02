@@ -1,12 +1,12 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
-import Overdrive from "vue-overdrive";
+import Vuelidate from "vuelidate";
 import axios from "axios";
-
+require("@/assets/main.scss");
 Vue.config.productionTip = false;
 Vue.prototype.$axios = axios;
-Vue.use(Overdrive);
+Vue.use(Vuelidate);
 
 new Vue({
   router,
