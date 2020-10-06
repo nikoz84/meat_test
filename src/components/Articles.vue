@@ -124,7 +124,7 @@ $yellow: #d8ad3d
   margin-left: 150px
 
 .loader
-  border: 16px solid #f3f3f3
+  border: 16px solid lighten($yellow, 20%)
   border-radius: 50%
   border-top: 16px solid $yellow
   width: 120px
