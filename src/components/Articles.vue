@@ -121,7 +121,7 @@ $yellow: #d8ad3d
 
 .content-loader
   min-height: 50vh
-  margin-left: 150px
+  margin-left: 15%
 
 .loader
   border: 16px solid lighten($yellow, 20%)
