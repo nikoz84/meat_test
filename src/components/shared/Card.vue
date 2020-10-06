@@ -55,4 +55,15 @@ export default {
     line-height: 24px
     letter-spacing: 0,01em
     text-align: left
+
+$breakpoint-tablet: 768px
+
+@media (max-width: $breakpoint-tablet)
+  .card
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+    transition: 0.3s
+    width: 80%
+    border-radius: 10px 10px 7px 7px
+    margin-bottom: 10px
+    margin-left: 10px
 </style>

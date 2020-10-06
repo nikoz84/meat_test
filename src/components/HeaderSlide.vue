@@ -39,6 +39,10 @@ export default {
 .header
   background-image: url("../assets/hero-background.jpg")
   height: 100vh
+  background-position: center center
+  background-size: cover
+  background-attachment: fixed
+  background-repeat: no-repeat
 
 .container-header
   padding: 30px 30px
@@ -64,33 +68,59 @@ export default {
   font-family: Caveat
   font-style: normal
   font-weight: bold
-  font-size: 80px
+  font-size: 4.5em
   line-height: 80px
   color: #3F454A
   z-index: 3
 
 .hero .img-hero
-  width: 621px
-  height: 112px
   position: absolute
-  bottom: -29px
+  width: 200%
+  height: 101px
+  left: -180px
+  bottom: -18px
   z-index: 1
-  left: -161px
 
 .styky-icons
   position: fixed
   display: flex
   flex-direction: row-reverse
   left: -30px
-  top: 70px
+  top: 45px
   width: 100%
   z-index: 3
 
 .styky-icons img
   border: solid 3px
-  padding: 15px
+  padding: 10px
   border-radius: 50%
-  margin-left:15px
-  height: 20px
-  width: 20px
+  margin-left: 15px
+
+$breakpoint-tablet: 768px
+
+@media (max-width: $breakpoint-tablet)
+  .hero
+    width: 50%
+    bottom: 30px
+    position: absolute
+    bottom: 150px
+    left: 25px
+    display: flex
+    align-items: center
+  .title-hero
+    position: relative
+    font-family: Caveat
+    font-style: normal
+    font-weight: bold
+    font-size: 3em
+    line-height: 1em
+    color: #3F454A
+    z-index: 3
+  .hero .img-hero
+    width: 100%
+    height: 100px
+    position: absolute
+    top: 27px
+    z-index: 1
+    left: 61px
 </style>

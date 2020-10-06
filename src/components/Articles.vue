@@ -95,14 +95,12 @@ $yellow: #d8ad3d
   align-items: flex-start
 
 .column
-  z-index: 4
   width: 60%
   display: flex
   flex-wrap: wrap
   justify-content: center
 
 .menu
-  z-index: 4
   flex-flow: column-nowrap
   width: 20%
   padding: 20px
@@ -120,4 +118,18 @@ $yellow: #d8ad3d
   margin-left: 30%
   color: $yellow
   content: url("../assets/arrow.svg")
+
+$breakpoint-tablet: 768px
+
+@media (max-width: $breakpoint-tablet)
+  .menu
+    flex-flow: column-nowrap
+    width: 30%
+    padding: 10px
+    border-radius: 10px 10px 7px 7px
+    box-shadow: 3px 4px 10px -7px rgba(0,0,0,0.2)
+  .active:after
+    margin-left: 5%
+    color: $yellow
+    content: url("../assets/arrow.svg")
 </style>
