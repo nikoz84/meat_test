@@ -55,6 +55,17 @@ export default {
     line-height: 24px
     letter-spacing: 0,01em
     text-align: left
+    &:hover
+      transition: text-yellow 275ms ease
+
+
+$yellow: #d8ad3d
+
+@keyframes text-yellow
+  0%
+    color: inherit
+  100%
+    color: $yellow
 
 $breakpoint-tablet: 768px
 
